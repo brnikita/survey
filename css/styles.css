@@ -68,22 +68,8 @@ h1 {
     padding: 72px 0 186px;
 }
 
-.final-page {
-    width: 730px;
-    margin: 0 auto;
-}
-
-.final-page h1 {
-    text-align: center;
-    padding-top: 58px;
-}
-
 .title-description {
     text-align: center;
-}
-
-.final-page .title-description {
-    padding-top: 23px;
 }
 
 .rewards-list {
@@ -131,6 +117,20 @@ h1 {
     margin-left: 6px;
 }
 
+.final-page {
+    width: 730px;
+    margin: 0 auto;
+}
+
+.final-page h1 {
+    text-align: center;
+    padding-top: 58px;
+}
+
+.final-page .title-description {
+    padding-top: 23px;
+}
+
 .final-page .rewards-list {
     margin-left: -1px;
     padding-top: 44px;
@@ -173,8 +173,67 @@ h1 {
     margin-left: 16px;
 }
 
-.rewards-list__price.price-shipping {
+.final-page .rewards-list__price.price-shipping {
     margin-left: 15px;
+}
+
+.final-page_v2 {
+    width: 734px;
+    margin: 0 auto;
+}
+
+.final-page_v2 h1 {
+    text-align: center;
+    padding-top: 58px;
+}
+
+.final-page_v2 .title-description {
+    padding-top: 23px;
+}
+
+.final-page_v2 .rewards-list {
+    padding-top: 44px;
+}
+
+.final-page_v2 .rewards-list-item {
+    padding-left: 25px;
+    float: left;
+    width: 228px;
+}
+
+.final-page_v2 .rewards-list-item:first-child {
+    padding-left: 0;
+}
+
+.final-page_v2 .rewards-list-item__picture {
+}
+
+.final-page_v2 .rewards-list-item__description {
+    text-align: center;
+}
+
+.final-page_v2 .rewards-list h3 {
+    height: 32px;
+    font-size: 18px;
+}
+
+.final-page_v2 .rewards-list__code {
+    height: 43px;
+}
+
+.final-page_v2 .rewards-list__prices {
+}
+
+.final-page_v2 .rewards-list__prices li {
+}
+
+.final-page_v2 .rewards-list__copyright {
+}
+
+.final-page_v2 .rewards-list__price.price-your {
+}
+
+.final-page_v2 .rewards-list__price.price-shipping {
 }
 
 .green-button {
