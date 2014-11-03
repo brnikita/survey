@@ -1,0 +1,56 @@
+@import url(../fonts/open_sans/stylesheet.css);
+@import url(../fonts/open_sans_bold/stylesheet.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+body {
+    font-family: open_sansregular;
+    font-size: 14px;
+    color: #000;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: normal;
+}
+
+.hide {
+    display: none;
+}
+
+.clearfix:after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.header {
+    background: #139cd9;
+    padding-top: 11px;
+    height: 61px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.header h2 {
+    font-family: open_sansbold;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.header p {
+    font-family: open_sansbold;
+    font-size: 11px;
+    color: #72c4e9;
+    line-height: 16px;
+}
+
+.footer {
+
+}
