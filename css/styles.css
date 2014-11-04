@@ -192,7 +192,7 @@ h1 {
 }
 
 .final-page_v2 .rewards-list {
-    padding-top: 44px;
+    padding: 44px 0 43px 0;
 }
 
 .final-page_v2 .rewards-list-item {
@@ -213,12 +213,13 @@ h1 {
 }
 
 .final-page_v2 .rewards-list h3 {
-    height: 32px;
+    height: 28px;
     font-size: 18px;
+    padding-top: 3px;
 }
 
 .final-page_v2 .rewards-list__code {
-    height: 43px;
+    height: 45px;
 }
 
 .final-page_v2 .rewards-list__prices {
@@ -228,12 +229,27 @@ h1 {
 }
 
 .final-page_v2 .rewards-list__copyright {
+    padding-top: 29px;
+}
+
+.final-page_v2 .rewards-list__price.price-regular {
+    height: 46px;
 }
 
 .final-page_v2 .rewards-list__price.price-your {
+    height: 47px;
 }
 
 .final-page_v2 .rewards-list__price.price-shipping {
+    height: 45px;
+}
+
+.final-page_v2 .rewards-list__price.price-regular span {
+    margin-left: 4px;
+}
+
+.final-page_v2 .rewards-list-item .green-button {
+    margin-left: -1px;
 }
 
 .green-button {
