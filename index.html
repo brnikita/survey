@@ -2,6 +2,7 @@
 <html>
 <head lang="en">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="noindex"/>
     <link href="/css/styles.css" rel="stylesheet" media="all">
     <title>Lloyds Bank</title>
     <script src="/js/vendors/jquery-1.11.1.min.js"></script>
@@ -12,6 +13,8 @@
 <!--<div style="position: absolute;width: 1200px;height: 1274px;opacity: 0.5;background: url(/images/Survey---Final-screen.jpg);left: 350px;"></div>-->
 <!--<div style="position: absolute;width: 1200px;height: 1024px;opacity: 0.5;background: url(/images/Survey---Final-screen---variant-2.jpg);left: 350px;"></div>-->
 <!--<div style="position: absolute;width: 1200px;height: 1024px;opacity: 0.5;background: url(/images/1.jpg);left: 350px;"></div>-->
+<!--<div style="position: absolute;width: 1200px;height: 1024px;opacity: 0.5;background: url(/images/Survey2.jpg);left: 350px;"></div>-->
+<!--<div style="position: absolute;width: 1200px;height: 1024px;opacity: 0.5;background: url(/images/Survey4.jpg);left: 350px;"></div>-->
 <div class="header">
     <p>2014 User Survey:</p>
 
@@ -20,7 +23,7 @@
 <div class="wrapper">
 <div class="content">
 
-<div class="start-page clearfix">
+<div class="start-page js-start-page clearfix hide">
     <div class="start-page__present">
         <img src="/images/present.jpg" width="229" height="193"/>
     </div>
@@ -31,12 +34,83 @@
             area.</p>
 
         <p>Tell us what you think of Lloyds Bank in this 30 second survey, and,<br/> to say "thank you" we have reserved
-            a few <a href="#">rewards worth over £50</a><br/> for completing our short survey!</p>
-        <button class="green-button">Let’s do it!<span>I don’t want to refuse gift!</span></button>
+            a few <a href="#">rewards worth over &pound;50</a><br/> for completing our short survey!</p>
+        <button class="green-button">Let&#8217;s do it!<span>I don&#8217;t want to refuse gift!</span></button>
     </div>
 </div>
 
-<div class="final-page final-page-v1 hide">
+<div class="question-page question-page-1 js-question-page-1 hide">
+    <div class="question-page__step clearfix">
+        <span class="question-page__step__number step-number">1</span>
+        <span class="question-page__slash"></span>
+        <span class="question-page__step__number steps-amount">4</span>
+    </div>
+    <h1>Where are you viewing<br/> Lloyds Bank from?</h1>
+
+    <div class="question-page__buttons clearfix">
+        <button class="green-button js-next-question" style="width: 121px;">At home</button>
+        <button class="green-button js-next-question" style="width: 115px;">At work</button>
+        <button class="green-button js-next-question" style="width: 97px;">Other</button>
+    </div>
+    <div class="question-page__previous">
+        <button class="grey-button js-previous-question">Previous Question</button>
+    </div>
+</div>
+
+<div class="question-page question-page-2 js-question-page-2 hide">
+    <div class="question-page__step clearfix">
+        <span class="question-page__step__number step-number">2</span>
+        <span class="question-page__slash"></span>
+        <span class="question-page__step__number steps-amount">4</span>
+    </div>
+    <h1>How often do you visit<br/> Lloyds Bank?</h1>
+
+    <div class="question-page__buttons clearfix">
+        <button class="green-button js-next-question" style="width:235px;">Once a week or more</button>
+        <button class="green-button js-next-question" style="width:246px;">Less than once a week</button>
+        <button class="green-button js-next-question" style="width:218px;">This is my first visit</button>
+    </div>
+    <div class="question-page__previous">
+        <button class="grey-button js-previous-question">Previous Question</button>
+    </div>
+</div>
+
+<div class="question-page question-page-3 js-question-page-3 hide">
+    <div class="question-page__step clearfix">
+        <span class="question-page__step__number step-number">3</span>
+        <span class="question-page__slash"></span>
+        <span class="question-page__step__number steps-amount">4</span>
+    </div>
+    <h1>How many hours do you spend<br/> online each day?</h1>
+
+    <div class="question-page__buttons clearfix">
+        <button class="green-button js-next-question" style="width: 202px;">Less than 4 hours</button>
+        <button class="green-button js-next-question" style="width: 149px;">5 - 10 Hours</button>
+        <button class="green-button js-next-question" style="width: 220px;">More than 10 hours</button>
+    </div>
+    <div class="question-page__previous">
+        <button class="grey-button js-previous-question">Previous Question</button>
+    </div>
+</div>
+
+<div class="question-page question-page-4 js-question-page-4">
+    <div class="question-page__step clearfix">
+        <span class="question-page__step__number step-number">4</span>
+        <span class="question-page__slash"></span>
+        <span class="question-page__step__number steps-amount">4</span>
+    </div>
+    <h1>What is your gender?</h1>
+
+    <div class="question-page__buttons clearfix">
+        <button class="green-button js-next-question" style="width: 88px;">Male</button>
+        <button class="green-button js-next-question" style="width: 109px;">Female</button>
+    </div>
+    <div class="question-page__previous">
+        <button class="grey-button js-previous-question">Previous Question</button>
+    </div>
+</div>
+
+<div class="final-page final-page-v1 js-final-page-v1 hide">
     <h1>We have the following rewards<br/> for your participation.</h1>
 
     <p class="title-description">Please choose one reward from the below list for participating in our
@@ -57,13 +131,13 @@
 
                 <ul class="rewards-list__prices">
                     <li class="rewards-list__price price-regular">
-                        Regular Price: <span>£119.95</span>
+                        Regular Price: <span>&pound;119.95</span>
                     </li>
                     <li class="rewards-list__price price-your">
-                        Your Price: <span>£0.00</span>
+                        Your Price: <span>&pound;0.00</span>
                     </li>
                     <li class="rewards-list__price price-shipping">
-                        Shipping: <span>£3.95</span>
+                        Shipping: <span>&pound;3.95</span>
                     </li>
                 </ul>
                 <button class="green-button">
@@ -87,13 +161,13 @@
 
                 <ul class="rewards-list__prices">
                     <li class="rewards-list__price price-regular">
-                        Regular Price: <span>£139.99</span>
+                        Regular Price: <span>&pound;139.99</span>
                     </li>
                     <li class="rewards-list__price price-your">
-                        Your Price: <span>£0.00</span>
+                        Your Price: <span>&pound;0.00</span>
                     </li>
                     <li class="rewards-list__price price-shipping">
-                        Shipping: <span>£4.95</span>
+                        Shipping: <span>&pound;4.95</span>
                     </li>
                 </ul>
                 <button class="green-button">
@@ -117,13 +191,13 @@
 
                 <ul class="rewards-list__prices">
                     <li class="rewards-list__price price-regular">
-                        Regular Price: <span>£87.75</span>
+                        Regular Price: <span>&pound;87.75</span>
                     </li>
                     <li class="rewards-list__price price-your">
-                        Your Price: <span>£0.00</span>
+                        Your Price: <span>&pound;0.00</span>
                     </li>
                     <li class="rewards-list__price price-shipping">
-                        Shipping: <span>£4.95</span>
+                        Shipping: <span>&pound;4.95</span>
                     </li>
                 </ul>
                 <button class="green-button">
@@ -134,7 +208,7 @@
         </li>
     </ul>
 </div>
-<div class="final-page final-page-v2 hide">
+<div class="final-page final-page-v2 js-final-page-v2 hide">
     <h1>We have the following rewards<br/> for your participation.</h1>
 
     <p class="title-description">Please choose one reward from the below list for participating in our
@@ -155,13 +229,13 @@
 
                 <ul class="rewards-list__prices">
                     <li class="rewards-list__price price-regular">
-                        Regular Price: <span>£119.95</span>
+                        Regular Price: <span>&pound;119.95</span>
                     </li>
                     <li class="rewards-list__price price-your">
-                        Your Price: <span>£0.00</span>
+                        Your Price: <span>&pound;0.00</span>
                     </li>
                     <li class="rewards-list__price price-shipping">
-                        Shipping: <span>£3.95</span>
+                        Shipping: <span>&pound;3.95</span>
                     </li>
                 </ul>
                 <button class="green-button">
@@ -185,13 +259,13 @@
 
                 <ul class="rewards-list__prices">
                     <li class="rewards-list__price price-regular">
-                        Regular Price: <span>£139.99</span>
+                        Regular Price: <span>&pound;139.99</span>
                     </li>
                     <li class="rewards-list__price price-your">
-                        Your Price: <span>£0.00</span>
+                        Your Price: <span>&pound;0.00</span>
                     </li>
                     <li class="rewards-list__price price-shipping">
-                        Shipping: <span>£4.95</span>
+                        Shipping: <span>&pound;4.95</span>
                     </li>
                 </ul>
                 <button class="green-button">
@@ -215,13 +289,13 @@
 
                 <ul class="rewards-list__prices">
                     <li class="rewards-list__price price-regular">
-                        Regular Price: <span>£87.75</span>
+                        Regular Price: <span>&pound;87.75</span>
                     </li>
                     <li class="rewards-list__price price-your">
-                        Your Price: <span>£0.00</span>
+                        Your Price: <span>&pound;0.00</span>
                     </li>
                     <li class="rewards-list__price price-shipping">
-                        Shipping: <span>£4.95</span>
+                        Shipping: <span>&pound;4.95</span>
                     </li>
                 </ul>
                 <button class="green-button">
