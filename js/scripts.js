@@ -1,5 +1,6 @@
 $(function () {
     var currentStep = 0,
+        originalTitle = document.title,
         $loaderScreen = $('.js-loading-screen'),
         $finalPage = $('.js-final-page'),
         steps = [
@@ -24,6 +25,43 @@ $(function () {
             $loaderScreen.addClass('hide');
             $finalPage.removeClass('hide');
         }, loadTime);
+    }
+
+    /**
+     * Function return name of current city
+     *
+     * @function
+     * @name getCity
+     * @returns {string}
+     */
+    function getCity() {
+        var city;
+
+        if (typeof geoip_city === 'function') {
+            city = geoip_city();
+            if (city) {
+                return city;
+            }
+        }
+
+        return 'Chicago';
+    }
+
+    /**
+     * Function dynamically changes title of document
+     *
+     * @function
+     * @name flashTitle
+     * @param {string} title New title of document
+     * @returns {undefined}
+     */
+    function flashTitle(title) {
+        if (document.title === originalTitle) {
+            document.title = title;
+            return;
+        }
+
+        document.title = originalTitle;
     }
 
     $('.js-player').jPlayer({
@@ -61,4 +99,10 @@ $(function () {
         currentStep--;
         steps[currentStep].removeClass('hide');
     });
+
+    setInterval(function () {
+        flashTitle('2014 User Survey');
+    }, 2000);
+
+    $('.js-city').text(getCity());
 });
