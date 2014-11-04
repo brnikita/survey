@@ -208,6 +208,24 @@ a:hover {
     width: 215px;
 }
 
+.loading-screen {
+    height: 561px;
+    text-align: center;
+}
+
+.loading-screen h1 {
+    padding-top: 58px;
+}
+
+.loading-screen p {
+    padding-top: 21px;
+    line-height: 24px;
+}
+
+.loading-screen img {
+    margin-top: 20px;
+}
+
 .final-page .title-description {
     text-align: center;
 }
