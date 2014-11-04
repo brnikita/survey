@@ -1,9 +1,9 @@
 $(function(){
     $('.js-player').jPlayer({
         ready: function () {
-            $(this).jPlayer('setMedia', {
-                mp3: '/audio/uk.mp3'
-            });
+//            $(this).jPlayer('setMedia', {
+//                mp3: '/audio/uk.mp3'
+//            }).jPlayer('play');
         },
         swfPath: '/js/vendors/jplayer',
         supplied: 'mp3',
