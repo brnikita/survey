@@ -154,11 +154,11 @@ a:hover {
     margin-left: 4px;
 }
 
-.question-page__slash {
+.sprite.question-page__slash {
     width: 21px;
     height: 54px;
     display: block;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAA2CAYAAAAoL9IOAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA25pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo4MjJDNkFGNDg5NUVFNDExOUFGMjg3QTU1MDE1MkM3NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoxMTNCOUU1RDY0MDExMUU0ODI0Qjk2MjQxNkY3RkUxMyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoxMTNCOUU1QzY0MDExMUU0ODI0Qjk2MjQxNkY3RkUxMyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxNCAoV2luZG93cykiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpkMjY5ZWE4YS0zNGI4LWQwNDktYjI3MC04YzljYTlhZGExODUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6ODIyQzZBRjQ4OTVFRTQxMTlBRjI4N0E1NTAxNTJDNzYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz79SYJvAAABuklEQVR42qyXzSsFURjG70yjbupayEIpWUhESindhQ2SbCxINzGzsfVH+SpSklKKFFmQhY2SuUmUhZSSskB43jqnpmnmzpkzz1u/xf3od8975z1nnnHCMCwRaxm0uSVurYALpnQItIAzpjQAG+DXIwmbQA2MygvWSqfAPagzpdL6qn7BkLaCCbDNlMp/eQjemVI/2jpD2gs6wRFTKqvcBD/RN4vMqSxoEUwnfWBbY+AV3DClQfwC6XIsj74KeAI9arWUlc6C0yRhEWlq67bSLjAADphSGaMt8JX2hbxz6qjWF7IGOE9V1QqvmNKGF8im/TKYA4Mm+9e0ZlTbz0yptL5metKYVDsYAXtMqczmLvhkSn3T1k2lEmeawTlTKhdoHfyZSrPmVMeZat77TFacuQMPTKnRtswjlTgzDnaY0po6iD+Y0lyzaSKVONMBjplSX0dtG6mX8kNLYLJIHkqKM3Jm3jKleltaVzz2SJx5BN3gjbVSiTMnRYRJUqtt2UgqcaZPPRTQpDrOfBeVerE4M894UnMjcUZuatdMaWB7eKS1X1aj1M+SuirOXIIXppQym3HpMNhnSv8FGACtNU+vc2LFMQAAAABJRU5ErkJggg==);
+    background-position: -247px 0;
 }
 
 .question-page h1 {
@@ -519,8 +519,8 @@ a:hover {
     color: #eb5c5c;
 }
 
-.player-sprite {
-    background: url('../images/player_sprite.png');
+.sprite {
+    background: url('../images/sprite.png');
 }
 
 .player__play, .player__pause {
@@ -529,11 +529,11 @@ a:hover {
     float: left;
 }
 
-.player__pause {
+.sprite.player__pause {
     background-position: -29px 0;
 }
 
-.player__bar {
+.sprite.player__bar {
     margin-top: 9px;
     width: 189px;
     height: 10px;
@@ -541,7 +541,7 @@ a:hover {
     float: right;
 }
 
-.player__bar__filler {
+.sprite.player__bar__filler {
     float: left;
     height: 100%;
     background-position: -58px -6px;
